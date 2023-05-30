@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    background: var(--Cream);
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.chartContainer{
+    max-width: 450px;
+    width: 100%;
+    margin-inline: 30px;
+}
+
+.balanceBox{
+    background: var(--Soft-red);
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    color: #fff;
+}
+
+
+.balanceBox small{
+    color: var(--Cream);
+}
+.balanceBox .balance{
+    font-size: 1.4rem;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.balanceBox .logo{
+    width: 50px;
+}
+
+.chartBox{
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.chartBox .chartHeader{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--Dark-brown);
+}
+
+.chartBars{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--Cream);
+}
+
+.summaryBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.totalBox .totalAmount{
+    font-size: 2rem;
+    color: var(--Dark-brown);
+}
+
+.summary{
+    text-align: right;
+}
+
+.summary .percentage{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+
+
